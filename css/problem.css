@@ -1,0 +1,537 @@
+/*---------------------------KEYFRAMES----------------------------*/
+
+@-webkit-keyframes example {
+  from {top:-100px;opacity: 0;}
+  to {top:0px;opacity:1;}
+}
+
+@keyframes example {
+  from {top:-100px;opacity: 0;}
+  to {top:0px;opacity:1;}
+}
+
+/*-------------------COMMON CODE FOR THE WHOLE WEBSITE--------------------*/
+*{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+body{
+  margin: 0;
+  color: #000;
+}
+
+a:focus {
+  border: 2px solid #c65f39;
+  overflow-y: hidden;
+}
+
+h1{
+  font-size: 2em;
+  line-height: 1.6;
+  color: #284040;
+}
+
+p{
+  font-size: 1.4em;
+  line-height: 1.6;
+}
+
+/*------------------RESPONSIVE COMMON CODE WITH MAX-WIDTH 800PX START-------------------*/
+@media only screen and (max-width:800px){
+body{
+  margin: auto;
+  background-color: orange;
+}
+  h1{
+  font-size: 1.8em;
+}
+
+ p{
+   font-size: 1.2em;
+ }
+}
+/*------------------RESPONSIVE COMMON CODE WITH MAX-WIDTH 800PX END-------------------*/
+
+
+
+/*---------------------------HEADER START----------------------------*/
+/*------------------RESPONSIVE PAGE WITH MIN-WIDTH 800PX START-------------------*/
+@media only screen and (min-width:800px){
+  /*---------------------------MENU----------------------------*/
+  .menu-toggle{
+    display: none;
+  }
+
+  .mobilhead{
+    display: none;
+  }
+
+.desktop header{
+    height: 10vh;
+    width: 100%;
+  }
+
+  .desktop header nav{
+    right: 0;
+    margin-right: 2vw;
+  }
+
+  .desktop nav{
+  background-color: red;
+  height: 10vh;
+  width: 80vw;
+  float: right;
+  }
+
+  .desktop nav li {
+    list-style: none;
+    display: inline-block;
+  }
+
+  .desktop nav ul{
+    float: right;
+    margin-top: 3.5vh;
+  }
+
+  .desktop nav a{
+    display: inline-block;
+    color: #fff;
+    margin-right: 8vw;
+    margin-left: 8vw;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .desktop nav a:visited {
+    color: #fff;
+  }
+
+  .desktop nav a:hover{
+    color: blue;
+    text-decoration: underline;
+    opacity: inherit;
+  }
+
+  .desktop .logo{
+    width: 20vw;
+    float: left;
+  }
+}
+/*------------------RESPONSIVE PAGE WITH MIN-WIDTH 800PX END-------------------*/
+
+
+/*------------------RESPONSIVE HEADER WITH MAX-WIDTH 800PX START-------------------*/
+@media only screen and (max-width:800px){
+.desktop{
+  display: none;
+}
+
+header{
+  height: 10vh;
+  width: 100%;
+  background-color: blue;
+  align-items: center;
+  text-align: center;
+  align-self: center;
+  position: fixed;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+}
+
+nav{
+background-color: red;
+position: fixed;
+z-index: 10;
+left: 0;
+right: 0;
+top: 0;
+height: 10vh;
+width: 100%;
+}
+
+header nav{
+  right: 0;
+  margin-right: 2vw;
+}
+
+nav a{
+  display: inline-block;
+  color: #fff;
+  padding-top: 0.5em;
+  margin-right: 5vw;
+  margin-left: 5vw;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+}
+
+nav a:visited {
+  color: #fff;
+}
+
+nav a:hover{
+  color: #c65f39;
+  text-decoration: underline;
+  opacity: inherit;
+}
+
+
+/*---------HAMBURGER MENU ICON/BUTTON STYLING----------*/
+.menu-toggle{
+  font-size:30px;
+  float:right;
+  margin-top: 2vh;
+  margin-right: 5vw;
+  overflow-y: hidden;
+  padding: 2vh;
+  height: auto;
+  width: auto;
+}
+
+#main-menu-toggle{
+  color: white;
+}
+
+#main-menu-close{
+  color: white;
+  font-size: 1.5em;
+}
+
+.main-menu {
+  position: absolute;
+  display: none;
+  top: 0;
+  overflow-x: visible;
+  z-index: 999;
+}
+
+.main-menu ul{
+  list-style: none;
+  margin-top: 10vh;
+  min-height: 100%;
+  display: block;
+  font-size: 1.5em;
+  padding: 1em;
+  color: #fff;
+  width: auto;
+  height: auto;
+  overflow-y: hidden;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.main-menu li a {
+  display: inline-block;
+  padding: 1em;
+  line-height: 1em;
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-menu a.menu-close {
+  border-bottom: 0;
+}
+
+.main-menu a:focus,
+.main-menu a:hover {
+  color: #c65f39;
+  text-decoration: underline;
+}
+
+.main-menu .menu-close {
+  font-size: 50px;
+  float:right;
+  margin-top: 1.5vh;
+  margin-right: 5vw;
+  overflow-y: hidden;
+  padding: 2vh;
+  height: auto;
+  width: auto;
+}
+
+.main-menu:target {
+  display: block;
+  right: 0;
+}
+
+.main-menu:target .menu-close, .menu-close {
+  z-index: 1001;
+}
+
+.main-menu:target ul,{
+  position: relative;
+  z-index: 1000;
+}
+
+.close{
+    background-color: red;
+    width: 200px;
+    border-radius: 35px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+
+  .close a{
+    font-size: 25px;
+    height: 75px;
+    padding: 0px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+
+  .close a:hover, .close a:focus{
+    color: #fff;
+  }
+
+.main-menu:target + .backdrop{
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+  background: #284040;
+  cursor: default;
+}
+
+@supports (position: fixed) {
+  .main-menu,
+  .main-menu:target + .backdrop{
+    position: fixed;
+  }
+}
+/*--------- END HAMBURGER MENU ICON/BUTTON STYLING----------*/
+}
+/*------------------RESPONSIVE HEADER WITH MAX-WIDTH 800PX START-------------------*/
+/*---------------------------HEADER END---------------------------*/
+
+
+/*---------------------------FOOTER START----------------------------*/
+footer{
+  background-color:  #698ea2;
+  height: 35vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  align-content: center;
+  text-align: center;
+}
+
+footer  h3{
+  color: #000;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 1.4em;
+  margin-top: 2vh;
+}
+
+footer  p{
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  margin: 0 10vw 2vh 10vw;
+}
+
+footer  a{
+  display: inline;
+  font-weight: bold;
+  color: orange;
+  font-size: 1.4em;
+  text-decoration:none;
+}
+
+footer  a:hover{
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-style: solid 3px;
+  text-decoration-color: #fff;
+}
+/*----------------ABOUT START----------------*/
+.about{
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+/*----------------ABOUT END----------------*/
+
+
+/*----------------FOOTERLINKS START----------------*/
+footer .footlink{
+  margin: 1vh 4vw 0 0;
+  float: right;
+}
+
+footer .footlink a{
+  color: orange;
+  font-size: 1.6em;
+  text-decoration: none;
+}
+
+footer .footlink button{
+  font-size: 0.8em;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 15px;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 1vh 2vw;
+  text-align: center;
+}
+
+footer .footlink button:hover{
+  border-color: orange;
+}
+/*----------------FOOTERLINKS START----------------*/
+
+/*----------------ARROW UP START----------------*/
+footer .arrow{
+  float: left;
+  position: absolute;
+  overflow-y: hidden;
+}
+
+.fa-arrow-up{
+  margin: 1vh 0 0 2vw;
+  color: orange;
+  padding-top: 10px;
+  line-height: 3em;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+}
+
+ .fa-arrow-up:hover{
+  color: white;
+}
+
+footer .arrow a{
+  font-size: 3em;
+}
+/*----------------ARROW UP END----------------*/
+
+/*----------------SOCIAL MEDIA ICONS START----------------*/
+footer .smicons{
+  width: 100vw;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+footer .smicons a{
+  margin: 3vh 2vw 2vh 2vw;
+  font-size: 2em;
+  color: #000;
+}
+
+footer .smicons a:hover{
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-style: solid 3px;
+  text-decoration-color: #fff;
+}
+/*----------------SOCIAL MEDIA ICONS END----------------*/
+
+/*------------------RESPONSIVE FOOTER WITH MAX-WIDTH 800PX START-------------------*/
+@media only screen and (max-width:800px){
+  footer{
+    background-color: red;
+    height: 40vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    align-content: center;
+    text-align: center;
+  }
+
+  footer  h3{
+    color: #000;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 1.4em;
+  }
+
+  footer  p{
+    font-size: 1.2em;
+  }
+
+  footer  a{
+    display: inline;
+    font-weight: bold;
+    color: orange;
+    font-size: 1.4em;
+    text-decoration:none;
+  }
+
+  footer  a:hover{
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-style: solid 3px;
+    text-decoration-color: #fff;
+  }
+
+  /*----------------FOOTERLINKS START----------------*/
+  footer .footlink{
+    margin: 1vh 5vw 0 0;
+    float: right;
+  }
+
+  footer .footlink a{
+    color: orange;
+    font-size: 1.6em;
+    text-decoration: none;
+  }
+
+  footer .footlink button{
+    font-size: 0.8em;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 1vh 2vw;
+    text-align: center;
+  }
+
+  footer .footlink button:hover{
+    border-color: orange;
+  }
+  /*----------------FOOTERLINKS END----------------*/
+
+  /*----------------ARROW START----------------*/
+  footer .arrow{
+
+    overflow-y: hidden;
+  }
+
+  .fa-arrow-up{
+    color: orange;
+    padding-top: 10px;
+    line-height: 3em;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+  }
+
+   .fa-arrow-up:hover{
+    color: white;
+  }
+
+  footer .arrow a{
+    font-size: 2em;
+  }
+  /*----------------ARROW END----------------*/
+  /*------------------RESPONSIVE FOOTER WITH MAX-WIDTH 800PX END-------------------*/
+}
+/*---------------------------END FOOTER----------------------------*/
