@@ -20,6 +20,7 @@
 body{
   margin: 0;
   color: #000;
+
 }
 
 a:focus {
@@ -79,7 +80,7 @@ body{
   }
 
   .desktop nav{
-  background-color: red;
+  background-color: #f89f4e;
   height: 10vh;
   width: 80vw;
   float: right;
@@ -318,7 +319,7 @@ nav a:hover{
 
 /*---------------------------FOOTER START----------------------------*/
 footer{
-  background-color:  #698ea2;
+  background-color: #cf513d;
   height: 35vh;
   width: 100vw;
   position: relative;
