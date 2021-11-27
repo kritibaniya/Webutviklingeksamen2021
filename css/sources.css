@@ -37,13 +37,24 @@ p{
   font-size: 1.4em;
   line-height: 1.6;
 }
+hr{
+  height:6px;
+  background-color: #a52a2a;
+}
 
+
+.showcase{
+  background-image: url("../images/index/blod.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+}
 /*------------------RESPONSIVE COMMON CODE WITH MAX-WIDTH 800PX START-------------------*/
 @media only screen and (max-width:800px){
 body{
   margin: auto;
-  background-color: orange;
-}
+  }
   h1{
   font-size: 1.8em;
 }
@@ -71,18 +82,21 @@ body{
 .desktop header{
     height: 10vh;
     width: 100%;
+
   }
 
   .desktop header nav{
     right: 0;
     margin-right: 2vw;
+
   }
 
   .desktop nav{
-  background-color: red;
+  background-color: #f2f2f2;
   height: 10vh;
-  width: 80vw;
+  width: 100vw;
   float: right;
+  overflow-y: hidden;
   }
 
   .desktop nav li {
@@ -95,18 +109,14 @@ body{
     margin-top: 3.5vh;
   }
 
-  .desktop nav a{
+  .desktop nav  a{
     display: inline-block;
-    color: #fff;
+    color: black;
     margin-right: 8vw;
-    margin-left: 8vw;
-    font-size: 1.3em;
+    font-size: 1.5em;
     font-weight: bold;
     text-decoration: none;
-  }
-
-  .desktop nav a:visited {
-    color: #fff;
+    text-shadow: 5px 1px 15px #a52a2a;
   }
 
   .desktop nav a:hover{
@@ -116,9 +126,15 @@ body{
   }
 
   .desktop .logo{
-    width: 20vw;
     float: left;
+    margin-top: 5px;
+    margin-left: 5px;
   }
+  hr{
+    height:6px;
+    background-color: #a52a2a;
+  }
+
 }
 /*------------------RESPONSIVE PAGE WITH MIN-WIDTH 800PX END-------------------*/
 
@@ -132,42 +148,28 @@ body{
 header{
   height: 10vh;
   width: 100%;
-  background-color: blue;
-  align-items: center;
-  text-align: center;
-  align-self: center;
+  background-color: #f2f2f2;
   position: fixed;
   z-index: 1;
-  overflow: hidden;
-  display: inline-block;
+  overflow-y: hidden;
 }
 
 nav{
-background-color: red;
+background-color:  #f2f2f2;
 position: fixed;
 z-index: 10;
 left: 0;
 right: 0;
 top: 0;
-height: 10vh;
+height: 100vh;
 width: 100%;
+
 }
 
 header nav{
   right: 0;
   margin-right: 2vw;
-}
 
-nav a{
-  display: inline-block;
-  color: #fff;
-  padding-top: 0.5em;
-  margin-right: 5vw;
-  margin-left: 5vw;
-  font-size: 1.3em;
-  font-weight: bold;
-  text-decoration: none;
-  text-align: center;
 }
 
 nav a:visited {
@@ -179,26 +181,31 @@ nav a:hover{
   text-decoration: underline;
   opacity: inherit;
 }
+header img{
+  float: left;
+  height: 8vh;
+  width: auto;
+  margin: 5px;
 
+}
 
 /*---------HAMBURGER MENU ICON/BUTTON STYLING----------*/
 .menu-toggle{
   font-size:30px;
   float:right;
-  margin-top: 2vh;
-  margin-right: 5vw;
   overflow-y: hidden;
-  padding: 2vh;
   height: auto;
   width: auto;
+  margin-top: 2vh;
+  margin-right: 2vw;
 }
 
 #main-menu-toggle{
-  color: white;
+  color: #a52a2a;;
 }
 
 #main-menu-close{
-  color: white;
+  color: #a52a2a;;
   font-size: 1.5em;
 }
 
@@ -211,12 +218,14 @@ nav a:hover{
 }
 
 .main-menu ul{
+  text-align: center;
+  margin-top: 1em;
   list-style: none;
-  margin-top: 10vh;
   min-height: 100%;
   display: block;
-  font-size: 1.5em;
-  padding: 1em;
+  font-size: 2.5em;
+  padding-left: 1em;
+  padding-right: 1em
   color: #fff;
   width: auto;
   height: auto;
@@ -227,10 +236,10 @@ nav a:hover{
 
 .main-menu li a {
   display: inline-block;
-  padding: 1em;
   line-height: 1em;
-  color: #fff;
+  color: #a52a2a;
   text-decoration: none;
+  padding: 2%;
 }
 
 .main-menu a.menu-close {
@@ -244,12 +253,11 @@ nav a:hover{
 }
 
 .main-menu .menu-close {
+  margin-top: 2vh;
+  margin-right: 2vw;
   font-size: 50px;
   float:right;
-  margin-top: 1.5vh;
-  margin-right: 5vw;
   overflow-y: hidden;
-  padding: 2vh;
   height: auto;
   width: auto;
 }
@@ -269,23 +277,28 @@ nav a:hover{
 }
 
 .close{
-    background-color: red;
-    width: 200px;
+    background-color:#a52a2a;
+    height: 75px;
+    width: 150px;
     border-radius: 35px;
     display: block;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
+
   }
 
   .close a{
-    font-size: 25px;
-    height: 75px;
-    padding: 0px;
+    font-size: 1em;
     display: block;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 10px;
     text-align: center;
+    color: black;
+  }
+  .close a:visited{
+    color: white;
   }
 
   .close a:hover, .close a:focus{
@@ -318,18 +331,19 @@ nav a:hover{
 
 /*---------------------------FOOTER START----------------------------*/
 footer{
-  background-color:  #698ea2;
-  height: 35vh;
+  background-color: #a52a2a;
+  height: auto;
   width: 100vw;
   position: relative;
   overflow: hidden;
   display: inline-block;
   align-content: center;
   text-align: center;
+  padding-bottom: 10px;
 }
 
 footer  h3{
-  color: #000;
+  color: #f2f2f2;
   font-weight: bold;
   text-decoration: underline;
   font-size: 1.4em;
@@ -340,14 +354,7 @@ footer  p{
   font-size: 1.2em;
   margin-bottom: 10px;
   margin: 0 10vw 2vh 10vw;
-}
-
-footer  a{
-  display: inline;
-  font-weight: bold;
-  color: orange;
-  font-size: 1.4em;
-  text-decoration:none;
+  color: #f2f2f2;
 }
 
 footer  a:hover{
@@ -371,7 +378,7 @@ footer .footlink{
 }
 
 footer .footlink a{
-  color: orange;
+  color: #fff;
   font-size: 1.6em;
   text-decoration: none;
 }
@@ -379,7 +386,7 @@ footer .footlink a{
 footer .footlink button{
   font-size: 0.8em;
   background-color: transparent;
-  border: 2px solid black;
+  border: 4px solid black;
   border-radius: 15px;
   box-sizing: border-box;
   display: inline-block;
@@ -388,7 +395,7 @@ footer .footlink button{
 }
 
 footer .footlink button:hover{
-  border-color: orange;
+  border-color: #f89f4e;
 }
 /*----------------FOOTERLINKS START----------------*/
 
@@ -401,7 +408,7 @@ footer .arrow{
 
 .fa-arrow-up{
   margin: 1vh 0 0 2vw;
-  color: orange;
+  color: white;
   padding-top: 10px;
   line-height: 3em;
   cursor: pointer;
@@ -411,7 +418,7 @@ footer .arrow{
 }
 
  .fa-arrow-up:hover{
-  color: white;
+  color: #f89f4e;
 }
 
 footer .arrow a{
@@ -430,11 +437,11 @@ footer .smicons{
 footer .smicons a{
   margin: 3vh 2vw 2vh 2vw;
   font-size: 2em;
-  color: #000;
+  color: black;
 }
 
 footer .smicons a:hover{
-  color: #fff;
+  color: #f89f4e;;
   text-decoration: underline;
   text-decoration-style: solid 3px;
   text-decoration-color: #fff;
@@ -444,8 +451,7 @@ footer .smicons a:hover{
 /*------------------RESPONSIVE FOOTER WITH MAX-WIDTH 800PX START-------------------*/
 @media only screen and (max-width:800px){
   footer{
-    background-color: red;
-    height: 40vh;
+    height: auto;
     width: 100vw;
     position: relative;
     overflow: hidden;
@@ -455,20 +461,19 @@ footer .smicons a:hover{
   }
 
   footer  h3{
-    color: #000;
     font-weight: bold;
     text-decoration: underline;
     font-size: 1.4em;
   }
 
   footer  p{
-    font-size: 1.2em;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
   }
 
   footer  a{
     display: inline;
-    font-weight: bold;
-    color: orange;
     font-size: 1.4em;
     text-decoration:none;
   }
@@ -487,15 +492,13 @@ footer .smicons a:hover{
   }
 
   footer .footlink a{
-    color: orange;
     font-size: 1.6em;
     text-decoration: none;
   }
 
   footer .footlink button{
-    font-size: 0.8em;
+    font-size: 0.4em;
     background-color: transparent;
-    border: 2px solid black;
     border-radius: 15px;
     box-sizing: border-box;
     display: inline-block;
@@ -504,18 +507,19 @@ footer .smicons a:hover{
   }
 
   footer .footlink button:hover{
-    border-color: orange;
+    border-color: #f89f4e;;
+  }
+  footer .smicons {
+    margin-top: 4vh;
   }
   /*----------------FOOTERLINKS END----------------*/
 
   /*----------------ARROW START----------------*/
   footer .arrow{
-
     overflow-y: hidden;
   }
 
   .fa-arrow-up{
-    color: orange;
     padding-top: 10px;
     line-height: 3em;
     cursor: pointer;
@@ -523,15 +527,8 @@ footer .smicons a:hover{
     text-decoration: none;
     outline: none;
   }
-
-   .fa-arrow-up:hover{
-    color: white;
-  }
-
   footer .arrow a{
     font-size: 2em;
   }
   /*----------------ARROW END----------------*/
   /*------------------RESPONSIVE FOOTER WITH MAX-WIDTH 800PX END-------------------*/
-}
-/*---------------------------END FOOTER----------------------------*/
