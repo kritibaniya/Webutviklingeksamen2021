@@ -120,7 +120,7 @@ body{
   }
 
   .desktop nav a:hover{
-    color: blue;
+    color: #c65f39;
     text-decoration: underline;
     opacity: inherit;
   }
