@@ -28,14 +28,8 @@ a:focus {
   overflow-y: hidden;
 }
 
-h1{
-  font-size: 2em;
-  line-height: 1.6;
-  color: #284040;
-}
-
 p{
-  font-size: 1.4em;
+  font-size: 1.8em;
   line-height: 1.6;
 }
 hr{
@@ -297,6 +291,7 @@ header img{
     margin-top: 10px;
     text-align: center;
     color: black;
+    overflow: hidden;
   }
   .close a:visited{
     color: white;
@@ -331,17 +326,17 @@ header img{
 /*---------------------------BODY END---------------------------*/
 .content{
   align-content:center;
-  font-size: 1.2em;
+  font-size: 1.8em;
 }
 
 .content #content{
-  margin: 5% 0 5% 0;
+  margin: 10vh 0 10vh 0;
 }
 .content .list1{
   background-color: #d8d8d8;
 }
 .content .list1, .list2{
-  padding: 2% 0 2% 2%; 
+  padding: 2% 0 2% 2%;
 }
 .content ul{
   margin: 2% 12vw 2% 12vw;
@@ -354,10 +349,12 @@ header img{
   text-decoration: underline solid 3px #a52a2a;
 }
 
+/*------------------RESPONSIVE MAIN BODY CONTENT MAX-WIDTH 800PX START-------------------*/
 @media only screen and (max-width:800px){
   .content h2{
     margin-left: 3%;
   }
+
   .content ul{
     margin: 2% 3% 2% 3%;
   }
@@ -366,6 +363,7 @@ header img{
     margin-top: 10vh;
   }
 }
+/*------------------RESPONSIVE MAIN BODY CONTENT MAX-WIDTH 800PX END-------------------*/
 /*---------------------------BODY END---------------------------*/
 
 

@@ -28,14 +28,9 @@ a:focus {
   overflow-y: hidden;
 }
 
-h1{
-  font-size: 2em;
-  line-height: 1.6;
-  color: #284040;
-}
 
 p{
-  font-size: 1.4em;
+  font-size: 1.8em;
   line-height: 1.6;
 }
 hr{
@@ -286,7 +281,6 @@ header img{
     margin-right: auto;
     margin-left: auto;
     text-align: center;
-
   }
 
   .close a{
@@ -297,6 +291,7 @@ header img{
     margin-top: 10px;
     text-align: center;
     color: black;
+    overflow: hidden;
   }
   .close a:visited{
     color: white;
@@ -326,13 +321,14 @@ header img{
 }
 /*--------- END HAMBURGER MENU ICON/BUTTON STYLING----------*/
 }
-/*------------------RESPONSIVE HEADER WITH MAX-WIDTH 800PX START-------------------*/
+/*------------------RESPONSIVE HEADER WITH MAX-WIDTH 800PX END-------------------*/
 /*---------------------------HEADER END---------------------------*/
 
 /*---------------------------BODY START---------------------------*/
 .content{
-  align-content:center;
-  font-size: 1.2em;
+  align-content: center;
+  font-size: 1.8em;
+  margin-top: 10vh;
 }
 
 .content .list1{
@@ -340,7 +336,7 @@ header img{
 }
 
 .content .list1, .list2{
-  padding: 2% 0 2% 2%;
+ padding: 2% 0 2% 0;
 }
 
 .content ul{
@@ -361,15 +357,26 @@ header img{
   text-decoration: underline 2px #a52a2a;
 }
 
+/*------------------RESPONSIVE MAIN BODY CONTENT MAX-WIDTH 800PX START-------------------*/
 @media only screen and (max-width:800px){
+  .content h2{
+    margin-left: 3%;
+  }
+
   .content ul{
-    margin: 2% 3% 2% 3%;
+    margin: 2% 0 2% 0;
+  }
+
+  .content ul li{
+    margin-right: 3%;
+    margin-left: 3%;
   }
 
   .content{
-    margin-top: 10vh;
+    padding-top: 10vh;
   }
 }
+/*------------------RESPONSIVE MAIN BODY CONTENT MAX-WIDTH 800PX END-------------------*/
 /*---------------------------BODY END---------------------------*/
 
 /*---------------------------FOOTER START----------------------------*/
