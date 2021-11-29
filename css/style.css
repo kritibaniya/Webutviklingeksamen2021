@@ -15,6 +15,8 @@
   scroll-behavior: smooth;
   overflow-x: hidden;
   margin: 0;
+  font-family: 'Poppins', sans-serif;
+
 }
 
 body{
@@ -42,13 +44,14 @@ hr{
   background-color: #a52a2a;
 }
 
-
-.showcase{
-  background-image: url("../images/index/blod.png");
+.showcase img{
+  max-width: 100%;
+  margin-top: 10vh;
+  max-width: 100%;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 70vh;
+}
+video{
+  max-width: 100%;
 }
 /*------------------RESPONSIVE COMMON CODE WITH MAX-WIDTH 800PX START-------------------*/
 @media only screen and (max-width:800px){
@@ -133,6 +136,7 @@ body{
   hr{
     height:6px;
     background-color: #a52a2a;
+
   }
 
 }
@@ -296,6 +300,7 @@ header img{
     margin-top: 10px;
     text-align: center;
     color: black;
+    overflow-y: hidden;
   }
   .close a:visited{
     color: white;
@@ -329,6 +334,43 @@ header img{
 /*---------------------------HEADER END---------------------------*/
 
 
+/*---------------------------Desktop body START----------------------------*/
+.body{
+  margin-left: 12vw;
+  margin-right: 12vw;
+  margin-bottom: 12vh;
+}
+
+.body h1{
+  color: #a52a2a;
+  text-decoration: underline;
+  margin-top: 10vh;
+}
+
+.body h3{
+  margin-bottom: 3vh;
+  font-size: 1.1em;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.body ul{
+  line-height: 1.6em;
+  font-size: 1.2em;
+}
+.body li{
+  margin-top: 15px;
+}
+
+/*---------------------------Desktop body END----------------------------*/
+
+
+/*---------------------------Body START WITH MAX-WIDTH 800PX START----------------------------*/
+@media only screen and (max-width:800px){
+
+}
+
+/*---------------------------Body END WITH MAX-WIDTH 800PX START---------------------------*/
 /*---------------------------FOOTER START----------------------------*/
 footer{
   background-color: #a52a2a;
