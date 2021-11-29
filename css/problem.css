@@ -15,6 +15,7 @@
   scroll-behavior: smooth;
   overflow-x: hidden;
   margin: 0;
+  font-family: 'Poppins', sans-serif
 }
 
 body{
@@ -289,6 +290,7 @@ header img{
   }
 
   .close a{
+    overflow: hidden;
     font-size: 1em;
     display: block;
     margin-right: auto;
@@ -327,8 +329,109 @@ header img{
 }
 /*------------------RESPONSIVE HEADER WITH MAX-WIDTH 800PX START-------------------*/
 /*---------------------------HEADER END---------------------------*/
+/*---------------------------body START---------------------------*/
+h2{
+  font-size: 1.8em;
+  margin-top: 25px;
+  margin-left: 12vw;
+  margin-bottom: 2px;
+  margin-right: 12vw;
+  color: #a52a2a;
+  text-decoration: underline;
+}
+p{
+  font-size: 1.4em;
+  margin-left: 12vw;
+  margin-right: 12vw;
+  margin-bottom: 2vw;
+  line-height: 1.6;
+}
+a{
+  color: #a52a2a;
+}
+a:hover{
+  color: #f89f4e;
+  text-decoration: underline;
+  opacity: inherit;
+}
+/* MAIN SLIDESHOW  */
+.container{
+  width: 55%;
+  height: auto;
+  margin-left: 20%;
 
+}
+.container img{
+  max-width: 45%;
+}
 
+#slideshow{
+  overflow: hidden;
+  z-index: -1;
+}
+
+#slideshow figure{
+  position: relative;
+  width: 500%;
+
+  animation: 20s slider infinite;
+}
+
+#slideshow img{
+  width: 20%;
+  float: left;
+}
+
+@keyframes slider{
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25%{
+    left: -100%;
+  }
+  45%{
+    left: -100%;
+  }
+  50%{
+    left: -200%;
+  }
+  70%{
+    left: -200%;
+  }
+  75%{
+    left: -300%;
+  }
+  95%{
+    left: -300%;
+  }
+  100%{
+    left: -400%;
+  }
+}
+/*---------------------------body END----------------------------*/
+/*------------------RESPONSIVE body WITH MAX-WIDTH 800PX START-------------------*/
+@media only screen and (max-width:800px){
+  .container{
+    width: 85%;
+    height: auto;
+    margin: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .container img{
+    max-width: 100%;
+  }
+  h2{
+    margin-top: 11vh;
+  }
+  p{
+    font-size: 1.2em;
+  }
+}
+/*------------------RESPONSIVE body WITH MAX-WIDTH 800PX END-------------------*/
 /*---------------------------FOOTER START----------------------------*/
 footer{
   background-color: #a52a2a;
