@@ -332,7 +332,7 @@ header img{
 /*---------------------------body START---------------------------*/
 h2{
   font-size: 1.8em;
-  margin-top: 25px;
+  margin-top: 10vh;
   margin-left: 12vw;
   margin-bottom: 2px;
   margin-right: 12vw;
@@ -356,10 +356,7 @@ a:hover{
 }
 /* MAIN SLIDESHOW  */
 .container{
-  width: 55%;
-  height: auto;
-  margin-left: 20%;
-
+  margin: auto;
 }
 .container img{
   max-width: 45%;
@@ -368,12 +365,16 @@ a:hover{
 #slideshow{
   overflow: hidden;
   z-index: -1;
+  width: 100%;
+  max-width: 750px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #slideshow figure{
   position: relative;
   width: 500%;
-
   animation: 20s slider infinite;
 }
 
@@ -415,17 +416,11 @@ a:hover{
 /*------------------RESPONSIVE body WITH MAX-WIDTH 800PX START-------------------*/
 @media only screen and (max-width:800px){
   .container{
-    width: 85%;
-    height: auto;
-    margin: 0;
-    padding-left: 5%;
-    padding-right: 5%;
+    width: 90%;
   }
-  .container img{
-    max-width: 100%;
-  }
+
   h2{
-    margin-top: 11vh;
+    font-size: 1.4em;
   }
   p{
     font-size: 1.2em;
