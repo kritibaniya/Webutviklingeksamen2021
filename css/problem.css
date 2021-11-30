@@ -427,6 +427,8 @@ a:hover{
   }
 }
 /*------------------RESPONSIVE body WITH MAX-WIDTH 800PX END-------------------*/
+
+
 /*---------------------------FOOTER START----------------------------*/
 footer{
   background-color: #a52a2a;
@@ -476,12 +478,12 @@ footer .footlink{
 }
 
 footer .footlink a{
-  color: #fff;
   font-size: 1.6em;
   text-decoration: none;
 }
 
 footer .footlink button{
+  color: #fff;
   font-size: 0.8em;
   background-color: transparent;
   border: 4px solid black;
@@ -490,6 +492,7 @@ footer .footlink button{
   display: inline-block;
   padding: 1vh 2vw;
   text-align: center;
+  cursor: pointer;
 }
 
 footer .footlink button:hover{
