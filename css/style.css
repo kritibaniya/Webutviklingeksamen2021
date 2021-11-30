@@ -362,6 +362,15 @@ header img{
   margin-top: 15px;
 }
 
+a{
+  color: #a52a2a;
+}
+a:hover{
+  color: #f89f4e;
+  text-decoration: underline;
+  opacity: inherit;
+}
+
 /*---------------------------Desktop body END----------------------------*/
 
 
