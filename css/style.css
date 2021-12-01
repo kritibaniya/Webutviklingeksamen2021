@@ -13,7 +13,7 @@
 /*-------------------COMMON CODE FOR THE WHOLE WEBSITE--------------------*/
 *{
   scroll-behavior: smooth;
-  overflow: hidden;
+  overflow-x: hidden;
   margin: 0;
   font-family: 'Poppins', sans-serif;
 
@@ -281,7 +281,7 @@ header img{
     margin-left: auto;
     text-align: center;
     margin-top: 5%;
-
+    overflow: hidden;
   }
 
   .close a{
