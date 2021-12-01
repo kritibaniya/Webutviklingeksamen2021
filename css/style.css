@@ -25,7 +25,7 @@ body{
 }
 
 a:focus {
-  border: 2px solid #c65f39;
+  border: 5px solid #ffcc00;
   overflow-y: hidden;
 }
 
