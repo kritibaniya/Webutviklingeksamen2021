@@ -320,14 +320,14 @@ header img{
 }
 /*------------------RESPONSIVE HEADER WITH MAX-WIDTH 800PX START-------------------*/
 /*---------------------------HEADER END---------------------------*/
-/*---------------------------BODY END---------------------------*/
+/*---------------------------BODY START---------------------------*/
 .content{
   align-content:center;
   font-size: 1.8em;
   margin-top: 5vh;
 }
 
-.content #content{
+.content .sourcebox{
   margin: 5vh 0 5vh 0;
 }
 .content .list1{
