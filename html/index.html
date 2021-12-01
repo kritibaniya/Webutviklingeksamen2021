@@ -2,27 +2,201 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Final project</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>ichor</title>
+    <link rel="icon" type="image/png" href=../images/favicon.ichor.png>
   </head>
   <body>
     <!--HEADER-->
-    <h1>Hello</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-        ea commodo consequat. Duis aute irure dolor in reprehenderit in
-        voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-         officia deserunt mollit anim id est laborum. </p>
+    <header>
+     <!--DESKTOP HEADER START-->
+     <div class="desktop">
+       <!--LOGO-->
 
-    <!--CONTENT-->
-    <!--PROBLEM-->
-    <!--HVORFRO PROBLEMET ER VIKTIG-->
-    <!--KOBLE PROBLEM OG LØSNING-->
-    <!--FORKLAR LØSNING-->
-    <!--OUR FUTURE-->
-    <!--OM OSS-->
-    <!--SOURCES-->
+       <!--LOGO END-->
+
+       <!--NAVBAR LINKS START-->
+       <nav>
+         <div class="logo">
+           <a href="index.html">
+             <img src="../images/index/ichor.logo1.png" alt="logo">
+           </a>
+         </div>
+         <ul>
+           <li> <a href="index.html">Solution</a> </li>
+           <li> <a href="problem.html">Problem</a> </li>
+           <li> <a href="faq.html">FAQ</a> </li>
+         </ul>
+       </nav>
+       <!--NAVBAR LINKS END-->
+     </div>
+     <!--DESKTOP HEADER END-->
+
+     <!--MOBILE HEADER START-->
+     <div class="mobilhead">
+       <!--HAMURGER ICON START-->
+        <a href="#main-menu" id="main-menu-toggle" class="menu-toggle">
+          <span class="fa fa-bars"></span>
+        </a>
+        <div class="logo">
+          <a href="index.html">
+            <img src="../images/index/ichor.logo1.png" alt="logo">
+          </a>
+        </div>
+
+        <nav id="main-menu" class="main-menu" >
+          <a href="#main-menu-toggle" id="main-menu-close" class="menu-close">
+            <span class="fa fa-close"></span>
+          </a>
+          <div class="logo">
+            <a href="index.html">
+              <img src="../images/index/ichor.logo1.png" alt="logo">
+            </a>
+          </div>
+          <ul>
+            <li> <a href="index.html">Solution</a> </li>
+            <li> <a href="problem.html">Problem</a> </li>
+            <li> <a href="faq.html">FAQ</a> </li>
+            <li class="close">
+              <a href="#main-menu-toggle" class="backdrop" tabindex="0">Close</a>
+            </li>
+         </ul>
+       </nav>
+       <hr>
+       <a href="#main-menu-toggle" clas+s="backdrop" tabindex="-1"></a>
+       <!--HAMRBURGER ICON END-->
+    </div>
+    <!--MOBILE HEADER END-->
+  </header>
+  <!-- END HEADER -->
+<hr>
+<div class="showcase">
+    <img src="../images/index/bloood.png" alt="Showcase picture of a bloodbag
+                with our slogan: Become a donor today, and help save lives!">
+</div>
+
+<div class="body">
+<h1>
+Blood donation
+</h1>
+<p>
+We have taken our starting point in the sustainable development goal 3:
+good health and well-being. The goal is to seek good health and well-being
+for all, at every stage of life, and it addresses all major health priorities.
+Within this, lack of blood is a major problem. We are always in need of blood
+donors, to save and improve lives. Read more about how important this
+problem is <a href="problem.html" title="Problem"> here</a>
+and get a deeper and broader insight. Our solution is focused on facilitating this issue.
+</p>
+
+<br>
+
+<h1 id="solution">
+Technological solution
+</h1>
+
+<p>
+We have developed an app which will help us accomplish our goal. Which is to
+be able to create a platform that will connect those who can help the people
+in need. It is a user-friendly app with few, but very important and useful
+functionalities. Since we aim to target people from all over the world, we
+want it to be easier for targeted users to utilize.
+</p>
+
+<br>
+<h3>
+A usecase which will give you an insight on how our app works:
+</h3>
+<p>Scenario: Superman wants to be a blood donor <br>
+Actor: Superman <br>
+Pre-condition: Superman has pre downloaded our app
+</p>
+<ul>
+  <li>
+    <strong>Step 1:</strong> He will need to create his profile by registering his email and phone number.
+  </li>
+  <li>
+  <strong>Step 2:</strong> He can either book an appointment for a health checkup, or get
+  information about the nearest health post through the app, and contact them directly.
+  </li>
+  <li>
+    <strong>Step 3:</strong> Superman needs to meet up at the health station for his blood test and health checkup.
+  </li>
+  <li>
+    <strong>Step 4:</strong> Only if Superman is healthy and capable of being a blood donor,
+    will an authorized health care worker fill his health data and verify his user.
+     Superman is now verified and ready to save lives!
+  </li>
+  <li>
+    <strong>Step 5: </strong>Superman gets a notification and a text message every time there is an emergency need of blood in his area.
+  </li>
+</ul>
+<br>
+<br>
+<h3>Here is a visual representation of how the app will function:</h3>
+<video controls>
+    <source src="../images/index/appvideo.mp4" type="video/mp4" alt="Video that visually represents our application">
+</video>
+
+<h1>Our future </h2>
+<p>Blood donation is our first step toward accomplishing UN’s sustainable goal.
+  We hope that in future, we can go further ahead and be able to gather organ
+  donors as well. Many people are born with organ failure, or have their organs
+  damaged due to injuries. Organ transplantation is a modern medicine, which
+  have saved plenty of lives. However, there are hundreds of people who don’t
+  have access to donors, and potential donors who don’t have much information
+  regarding this issue. </p>
+</div>
+  <!---FOOTER----->
+    <footer>
+      <!--ARROW-->
+      <div class="arrow">
+        <a  href="#"><i class="fa fa-arrow-up" alt="Back to the top arrow icon pointing upwards" aria-hidden="true"></i></a>
+      </div>
+      <!--END ARROW-->
+
+      <!--SOURCE-->
+      <div class="footlink">
+        <a href="sources.html" alt="Source button to acsess all the sources used
+        on the website">
+          <button>SOURCE</button>
+        </a>
+      </div>
+      <!--END SOURCE-->
+
+      <!--ABOUT US-->
+        <div class="about">
+          <h3>About us</h3>
+          <br>
+          <p>We are three full-time students, who are passionate about our
+            environment, mother earth and our fellow human beings. Our project
+             is based on helping people in need. We took our time to identify
+             the problem, now its your time to be the solution. </p>
+        </div>
+        <!--END ABOUT US-->
+
+        <!--SOCIAL MEDIA ICONS-->
+        <div class="smicons">
+          <a href="https://www.youtube.com" target="_blank">
+            <i class="fa fa-youtube-play" alt="black youtube logo icon"
+               aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com" target="_blank">
+            <i class="fa fa-instagram" alt="black instagram logo icon"
+                aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com" target="_blank">
+            <i class="fa fa-facebook-official" alt="black facebook logo icon"
+                aria-hidden="true"></i></a>
+          <a href="https://www.snapchat.com" target="_blank">
+            <i class="fa fa-snapchat-square" alt="black snapchat logo icon"
+              aria-hidden="true"></i></a>
+        </div>
+        <!--END SOCIAL MEDIA ICONS-->
+      </footer>
+      <!---END FOOTER----->
   </body>
 </html>

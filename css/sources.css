@@ -16,7 +16,6 @@
   overflow-x: hidden;
   margin: 0;
   font-family: 'Poppins', sans-serif;
-
 }
 
 body{
@@ -30,7 +29,7 @@ a:focus {
 }
 
 p{
-  font-size: 1.4em;
+  font-size: 1.8em;
   line-height: 1.6;
 }
 hr{
@@ -38,14 +37,13 @@ hr{
   background-color: #a52a2a;
 }
 
-.showcase img{
-  max-width: 100%;
-  margin-top: 10vh;
-  max-width: 100%;
+
+.showcase{
+  background-image: url("../images/index/blod.png");
   background-repeat: no-repeat;
-}
-video{
-  max-width: 100%;
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
 }
 /*------------------RESPONSIVE COMMON CODE WITH MAX-WIDTH 800PX START-------------------*/
 @media only screen and (max-width:800px){
@@ -55,6 +53,7 @@ body{
 
  p{
    font-size: 1.2em;
+
  }
 }
 /*------------------RESPONSIVE COMMON CODE WITH MAX-WIDTH 800PX END-------------------*/
@@ -127,7 +126,6 @@ body{
   hr{
     height:6px;
     background-color: #a52a2a;
-
   }
 
 }
@@ -322,56 +320,78 @@ header img{
 }
 /*------------------RESPONSIVE HEADER WITH MAX-WIDTH 800PX START-------------------*/
 /*---------------------------HEADER END---------------------------*/
-
-
-/*---------------------------Desktop body START----------------------------*/
-.body{
-  margin-left: 12vw;
-  margin-right: 12vw;
-  margin-bottom: 12vh;
+/*---------------------------BODY END---------------------------*/
+.content{
+  align-content:center;
+  font-size: 1.8em;
+  margin-top: 5vh;
 }
 
-.body h1{
-  color: #a52a2a;
-  text-decoration: underline;
-  margin-top: 10vh;
+.content #content{
+  margin: 5vh 0 5vh 0;
+}
+.content .list1{
+  background-color: #d8d8d8;
+}
+.content .list1, .list2{
+  padding: 2% 0 2% 2%;
 }
 
-.body h3{
-  margin-bottom: 3vh;
-  font-size: 1.1em;
-  font-style: italic;
-  text-decoration: underline;
-}
-
-.body ul{
-  line-height: 1.6em;
+.content h1{
   font-size: 1.2em;
-}
-.body li{
-  margin-top: 15px;
-}
-
-a{
+  margin-left: 12vw;
+  margin-bottom: -2%;
   color: #a52a2a;
-}
-a:hover{
-  color: #f89f4e;
-  text-decoration: underline;
-  opacity: inherit;
+  text-decoration: underline solid 3px #a52a2a;
 }
 
-/*---------------------------Desktop body END----------------------------*/
+.content h2{
+  margin-left: 12vw;
+  font-size: 1em;
+  color: #000;
+  text-decoration: underline solid 3px #a52a2a;
+}
+
+.content ul{
+  margin: 2% 12vw 2% 12vw;
+  border: solid #a52a2a;
+  border-radius: 10px;
+}
+
+.content ul li{
+  font-size: 0.7em;
+}
 
 
-/*---------------------------Body START WITH MAX-WIDTH 800PX START----------------------------*/
+/*------------------RESPONSIVE MAIN BODY CONTENT MAX-WIDTH 800PX START-------------------*/
 @media only screen and (max-width:800px){
-  .body h1{
-    font-size: 1.8em;
+  .content h1{
+    font-size: 1em;
+    margin: 3% 0 -2% 3%;
+  }
+
+  .content h2{
+    margin-left: 3%;
+    font-size: 0.8em;
+  }
+
+  .content{
+    margin-top: 10vh;
+  }
+
+  .content ul{
+    margin: 2% 0 2% 0;
+  }
+
+  .content ul li{
+    margin-right: 3%;
+    margin-left: 3%;
+    font-size: 0.6em;
   }
 }
+/*------------------RESPONSIVE MAIN BODY CONTENT MAX-WIDTH 800PX END-------------------*/
+/*---------------------------BODY END---------------------------*/
 
-/*---------------------------Body END WITH MAX-WIDTH 800PX START---------------------------*/
 
 
 /*---------------------------FOOTER START----------------------------*/

@@ -15,8 +15,7 @@
   scroll-behavior: smooth;
   overflow-x: hidden;
   margin: 0;
-  font-family: 'Poppins', sans-serif;
-
+  font-family: 'Poppins', sans-serif
 }
 
 body{
@@ -38,20 +37,20 @@ hr{
   background-color: #a52a2a;
 }
 
-.showcase img{
-  max-width: 100%;
-  margin-top: 10vh;
-  max-width: 100%;
+
+.showcase{
+  background-image: url("../images/index/blod.png");
   background-repeat: no-repeat;
-}
-video{
-  max-width: 100%;
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
 }
 /*------------------RESPONSIVE COMMON CODE WITH MAX-WIDTH 800PX START-------------------*/
 @media only screen and (max-width:800px){
 body{
   margin: auto;
   }
+
 
  p{
    font-size: 1.2em;
@@ -127,7 +126,6 @@ body{
   hr{
     height:6px;
     background-color: #a52a2a;
-
   }
 
 }
@@ -292,6 +290,7 @@ header img{
     text-align: center;
     color: #000;
   }
+
   .close a:visited{
     color: #fff;
   }
@@ -322,36 +321,31 @@ header img{
 }
 /*------------------RESPONSIVE HEADER WITH MAX-WIDTH 800PX START-------------------*/
 /*---------------------------HEADER END---------------------------*/
-
-
-/*---------------------------Desktop body START----------------------------*/
-.body{
+/*---------------------------body START---------------------------*/
+h1{
+  font-size: 2em;
+  margin-top: 5vh;
   margin-left: 12vw;
+  margin-bottom: 3vh;
   margin-right: 12vw;
-  margin-bottom: 12vh;
-}
-
-.body h1{
   color: #a52a2a;
   text-decoration: underline;
-  margin-top: 10vh;
 }
 
-.body h3{
-  margin-bottom: 3vh;
-  font-size: 1.1em;
-  font-style: italic;
-  text-decoration: underline;
+h2{
+  margin: 0 12vw 0 12vw;
+  font-size: 1.4em;
+  color: #000;
+  text-decoration: underline solid 3px #a52a2a;
+  margin-bottom: 2%;
 }
 
-.body ul{
-  line-height: 1.6em;
-  font-size: 1.2em;
-}
-.body li{
-  margin-top: 15px;
-}
 
+p{
+  font-size: 1.4em;
+  margin: 0 12vw 2vh 12vw;
+  line-height: 1.6;
+}
 a{
   color: #a52a2a;
 }
@@ -360,18 +354,82 @@ a:hover{
   text-decoration: underline;
   opacity: inherit;
 }
-
-/*---------------------------Desktop body END----------------------------*/
-
-
-/*---------------------------Body START WITH MAX-WIDTH 800PX START----------------------------*/
-@media only screen and (max-width:800px){
-  .body h1{
-    font-size: 1.8em;
-  }
+/* MAIN SLIDESHOW  */
+.container{
+  margin: auto;
+}
+.container img{
+  max-width: 45%;
 }
 
-/*---------------------------Body END WITH MAX-WIDTH 800PX START---------------------------*/
+#slideshow{
+  overflow: hidden;
+  z-index: -1;
+  width: 100%;
+  max-width: 750px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#slideshow figure{
+  position: relative;
+  width: 500%;
+  animation: 20s slider infinite;
+}
+
+#slideshow img{
+  width: 20%;
+  float: left;
+}
+
+@keyframes slider{
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25%{
+    left: -100%;
+  }
+  45%{
+    left: -100%;
+  }
+  50%{
+    left: -200%;
+  }
+  70%{
+    left: -200%;
+  }
+  75%{
+    left: -300%;
+  }
+  95%{
+    left: -300%;
+  }
+  100%{
+    left: -400%;
+  }
+}
+/*---------------------------body END----------------------------*/
+/*------------------RESPONSIVE body WITH MAX-WIDTH 800PX START-------------------*/
+@media only screen and (max-width:800px){
+  .container{
+    width: 90%;
+  }
+  h1{
+    font-size: 1.8em;
+    margin-top: 12vh;
+    margin-bottom: 3vh;
+    margin-right: 12vw;
+  }
+
+  p{
+    font-size: 1.2em;
+  }
+}
+/*------------------RESPONSIVE body WITH MAX-WIDTH 800PX END-------------------*/
 
 
 /*---------------------------FOOTER START----------------------------*/
